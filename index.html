@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Лабораторная по SVG</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<svg wievBox="0 0 100 40" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100" class="search">
+		<symbol id="search">
+		<circle cx="75" cy="25" r="20" stroke-width="5" stroke="currentColor" fill="none"/>
+		<line x1="30" y1="70" x2="60" y2="40" stroke-width="5" stroke="currentColor"/>
+		</symbol>
+
+		<use href="#search"/>
+	</svg>
+
+	<section>
+		<h2>Modal close svg</h2>
+
+		<svg wievBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100" class="close">
+			<circle class="close__circle"
+				cx="50" 
+				cy="50" 
+				r="40" 
+				stroke-width="3" 
+				stroke="currentColor"
+				fill="none"
+			/>
+			<line class="close__line" x1="25" y1="25" x2="75" y2="75" stroke-width="3" stroke="currentColor"/>
+			<line class="close__line" x1="75" y1="25" x2="25" y2="75" stroke-width="3" stroke="currentColor"/>
+        </svg>
+	</section>
+	<section>
+		<h2>Burger menu svg</h2>
+
+		<svg wievBox="0 0 100 100" width="100" height="100" class="burger">
+            <line class="line_1" x1="10" y1="40" x2="90" y2="40" stroke-width="3" stroke="currentColor"/>
+            <line class="line_2" x1="10" y1="50" x2="90" y2="50" stroke-width="3" stroke="currentColor"/>
+            <line class="line_3" x1="10" y1="60" x2="90" y2="60" stroke-width="3" stroke="currentColor"/>
+            
+        </svg>
+	</section>
+	<section>
+		<h2>Search svg</h2>
+
+		<svg wievBox="0 0 100 40" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100" class="search">
+            <circle cx="75" cy="25" r="20" stroke-width="5" stroke="currentColor" fill="none"/>
+            <line x1="30" y1="70" x2="60" y2="40" stroke-width="5" stroke="currentColor"/>
+        </svg>
+	</section>
+	<section>
+		<h2>Home page</h2>
+
+		<svg wievBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100" class="home">
+            <polygon points="0,50 40,25 80,50" fill="currentColor" class="home__house"/>
+            <rect x="0" y="50" width="80" height="50" fill="currentColor" class="home__house"/>
+            <rect x="41" y="71" width="10" height="10" fill="currentColor" class="home__window"/>            
+            <rect x="29" y="71" width="10" height="10" fill="currentColor" class="home__window"/>            
+            <rect x="41" y="59" width="10" height="10" fill="currentColor" class="home__window"/>            
+            <rect x="29" y="59" width="10" height="10" fill="currentColor" class="home__window"/>        
+        </svg>
+	</section>
+	<section>
+		<h2>Snowflake svg</h2>
+
+		<svg wievBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100" class="snowflake">
+			<g id="part">
+				<line x1="50" y1="50" x2="100" y2="50" stroke="currentColor" stroke-width="3"></line>
+				<line x1="70" y1="50" x2="80" y2="30" stroke="currentColor" stroke-width="3"></line>
+				<line x1="70" y1="50" x2="80" y2="70" stroke="currentColor" stroke-width="3"></line>
+
+				<line x1="60" y1="50" x2="70" y2="30" stroke="currentColor" stroke-width="3"></line>
+				<line x1="60" y1="50" x2="70" y2="70" stroke="currentColor" stroke-width="3"></line>
+				
+				<line x1="80" y1="50" x2="90" y2="30" stroke="currentColor" stroke-width="3"></line>
+				<line x1="80" y1="50" x2="90" y2="70" stroke="currentColor" stroke-width="3"></line>
+			</g>
+			<use href="#part" transform="rotate(120, 50, 50)"/>
+			<use href="#part" transform="rotate(240, 50, 50)"/>
+        </svg>
+	</section>
+	<section>
+		<h2>Clock svg</h2>
+
+		<svg wievBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" version="1.1" width="500" height="500">
+			<circle cx="250" cy="250" r="200" stroke-width="5" stroke="black" fill="none"/>
+			<g>
+				<line x1="250" y1="250" x2="250" y2="100" stroke-width="10" stroke="black" transform="rotate(0 250 250)">
+					<animateTransform
+						attributeName="transform"
+						attributeType="XML"
+						type="rotate"
+						from="0 250 250"
+						to="360 250 250"
+						dur="43200s"
+						repeatCount="indefinite"
+					/>
+				</line>		
+				<line x1="250" y1="250" x2="250" y2="60" stroke-width="5" stroke="black" transform="">
+					<animateTransform
+						attributeName="transform"
+						attributeType="XML"
+						type="rotate"
+						from="0 250 250"
+						to="360 250 250"
+						dur="3600s"
+						repeatCount="indefinite"
+					/>
+				</line>
+				<line x1="250" y1="250" x2="250" y2="50" stroke-width="5" stroke="red" transform="rotate(0 250 250)">
+					<animateTransform
+						attributeName="transform"
+						attributeType="XML"
+						type="rotate"
+						from="0 250 250"
+						to="360 250 250"
+						dur="60s"
+						repeatCount="indefinite"
+					/>
+				</line>	
+			</g>
+        </svg>
+	</section>
+	<section>
+		<h2>Lamp with switch svg</h2>
+
+		<svg version="1.1" id="lamp" x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve">	
+			<path class="st0" d="M9.77,31.55C9.3,30.37,6.15,22,10.73,14c4.12-7.21,11.56-8.98,14.23-9.62c1.45-0.35,17.11-4,24.7,6.55
+				c5.67,7.89,2.54,17.73,2.11,19.02" stroke="currentColor" fill="none"/>
+			<circle class="light" cx="51.21" cy="51.33" r="12.92" fill="none" stroke="currentColor" stroke-width="0.25"/>
+			<line class="st2" x1="51.15" y1="38.4" x2="47.66" y2="51.33" stroke="currentColor" stroke-width="0.25"/>
+			<line class="st2" x1="51.27" y1="38.4" x2="54.77" y2="51.33" stroke="currentColor" stroke-width="0.25"/>
+			<polygon class="st1" points="61.18,34.35 41.25,34.35 38.29,47.71 64.14,47.71 "/>
+			<polygon class="st1" points="56.3,27.8 46.12,27.8 44.61,34.35 57.82,34.35 "/>
+			<path class="st2" d="M48.77,51.56c0.36,0.13,0.87,0.23,1.31,0.01c0.43-0.21,0.43-0.55,0.77-0.62c0.55-0.11,0.87,0.72,1.57,0.77
+				c0.28,0.02,0.69-0.08,1.23-0.68" fill="none" stroke="black" stroke-width="0.25"/>
+			<rect x="1.73" y="30.73" class="st1" width="19.72" height="19.72" stroke="currentColor" stroke-width="0.1" fill="white"/>
+			<rect x="8.56" y="35.29" class="st1" width="6.06" height="10.6" stroke="currentColor" stroke-width="0.1" fill="white"/>
+			<polygon class="switch" points="14.63,40.29 8.56,40.29 7.96,35.29 15.23,35.29 " stroke="2"/>
+		</svg>
+
+	</section>
+	<script src="script.js"></script>
+</body>
+</html>

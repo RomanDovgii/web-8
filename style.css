@@ -1,0 +1,85 @@
+.snowflake {
+    color:cyan;
+}
+
+.search {
+    color: hotpink;
+    transition: all 0.5s;
+}
+
+.search:hover {
+    color: tomato;
+}
+
+.close__circle {
+    color: tomato;
+    transition: all 0.8s;
+}
+
+.close__line {
+    color: tomato;
+    transition: all 0.8s;
+}
+
+.close:hover .close__circle {
+    color: black;
+}
+
+.close:hover .close__line {
+    color: crimson;
+}
+
+.burger {
+    color: darkgreen;
+    transition: all 0.8s;
+}
+
+.line_1,
+.line_2,
+.line_3 {
+    transform-box: fill-box;
+    transform-origin: 50% 50%;
+    transition: all 0.8s;
+}
+
+.burger__active .line_1 {
+    transform: translate(0, 10px) rotate(45deg);
+}
+
+.burger__active .line_2 {
+    opacity: 0;
+}
+
+.burger__active .line_3 {
+    transform: translate(0, -10px) rotate(-45deg);
+}
+
+.burger:hover {
+    color: darkorange;
+}
+
+.home__house {
+    color: black;
+    transition: all 0.8s;
+}
+
+.home__window {
+    color: white;
+    transition: all 0.8s;
+}
+
+.home:hover .home__house {
+    color: burlywood;
+}
+
+.home:hover .home__window {
+    color: yellow;
+}
+
+.light--on {
+    fill: yellow;
+}
+
+.switch--on {
+    transform: translate(0, 5.6px)
+}
